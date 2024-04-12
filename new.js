@@ -42,7 +42,7 @@
         showSlide(index);
     });
 
-    document.querySelector('.night').addEventListener('click', night);
+    // document.querySelector('.night').addEventListener('click', night);
 var flag=false;
 function night() {
     var body = document.querySelector('.content');

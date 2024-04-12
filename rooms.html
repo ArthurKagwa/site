@@ -11,12 +11,10 @@
 <body>
     <div class="header">
         <div class="top">
-            <a href="index.html">
-                <h1 class="name">
-                    ATLANTIS ROYALE
-                   
-                </h1>
-            </a>
+            <h1 class="name"><a href="index.html">
+                ATLANTIS ROYALE
+               
+            </a></h1>
 
             <hr style="width: 90%; border-color:rgb(35, 35, 90);height:2px">
 
@@ -148,16 +146,16 @@
             <br>
             <div class="set">
                 <label for="name">Your Name</label>
-                <input type="text" id="name" name="visitor_name" placeholder="John Doe"  required>
+                <input type="text" id="name" name="visitor_name" placeholder="John Kauma"  required>
             </div>
             <fieldset class="line">
                 <div class="sets">
                     <label for="email">Your E-mail</label>
-                    <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
+                    <input type="email" id="email" name="visitor_email" placeholder="johnkauma@email.com" required>
                 </div>
                 <div class="sets">
                     <label for="phone">Your Phone</label>
-                    <input type="tel" id="phone" name="visitor_phone" placeholder="498-348-3872"  required>
+                    <input type="tel" id="phone" name="visitor_phone" placeholder="000-348-0000"  required>
                 </div>
             </fieldset>
             
@@ -184,13 +182,28 @@
             </fieldset>
             
             <div class="set">
-                <label for="room-selection">Select Room Preference</label>
-                <select id="room-selection" name="room_preference" required>
-                    <option value="">Choose a Room from the List</option>
-                    <option value="connecting">Connecting</option>
-                    <option value="adjoining">Adjoining</option>
-                    <option value="adjacent">Adjacent</option>
-                </select>
+                <fieldset class="line">
+                    <div class="lined" style="width: 45%;">
+                        <label for="room-selection">Select Room Preference</label>
+                        <select id="room-selection" name="room_preference" required>
+                            <option value="">Choose a Room from the List</option>
+                            <option value="connecting">Connecting</option>
+                            <option value="adjoining">Adjoining</option>
+                            <option value="adjacent">Adjacent</option>
+                        </select>
+                    </div>
+                    <div class="lined" style="width: 45%;">
+                        <label for="room-type">Select type Preference</label>
+                        <select id="room-type" name="room_type" required>
+                            <option value="">Choose a type from the List</option>
+                            <option value="connecting">Penthouse</option>
+                            <option value="adjoining">Suite</option>
+                            <option value="adjacent">Guest Room</option>
+                        </select>
+                    </div>
+                </fieldset>
+                
+              
             </div>
             <hr>
             <div class="set">
@@ -200,6 +213,7 @@
             <button type="submit">Book The Rooms</button>
         </form>
     </div>
+    <br><br>
 
     <h2>FINE LIVING</h2>
    <br>
