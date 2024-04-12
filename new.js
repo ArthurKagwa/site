@@ -41,3 +41,29 @@
         
         showSlide(index);
     });
+
+    document.querySelector('.night').addEventListener('click', night);
+var flag=false;
+function night() {
+    var body = document.querySelector('.content');
+    var strip = document.querySelector('.strip');
+    var link=document.querySelector('.ll');
+    
+    
+    if (flag) {
+    body.style.backgroundColor = 'antiquewhite';
+    body.style.color = 'rgba(36, 32, 26, 0.85)';
+    strip.style.backgroundColor = 'antiquewhite';
+    strip.style.color = 'black';
+    // link.style.color='black';
+    flag=false;
+    }
+    else{   
+    body.style.backgroundColor = 'rgba(36, 32, 26, 0.85)';
+    body.style.color = 'antiquewhite';
+    strip.style.backgroundColor = 'rgba(36, 32, 26)';
+    strip.style.color = 'antiquewhite';
+    // link.style.color='goldenrod';
+    flag=true;
+    }
+}
