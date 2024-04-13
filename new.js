@@ -67,3 +67,19 @@ function night() {
     flag=true;
     }
 }
+
+
+// adding a link to the footer
+
+
+
+document.addEventListener('DOMContentLoaded',function(){
+    var loc=document.createElement('p');
+
+var locationLink=document.createElement('a');
+locationLink.href='index.html#map';
+locationLink.textContent='location';
+loc.appendChild(locationLink);
+var linkDiv_infooter=document.querySelector('.links');
+    linkDiv_infooter.appendChild(loc);
+});

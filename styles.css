@@ -2,8 +2,26 @@ body{
     margin: 0;
     padding: 0;
 }
-*{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+p,h3{
+    font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
+}
+.name{
+    display:block;
+    margin: auto;
+   
+
+}
+.names{
+    text-align: center;
+    width: 90%;
+}
+.book{
+    width: 10%;
+
+}
+.name,h1,h2{
+    font-family:'Times New Roman' ;
 }
 h1,h2,p{
     padding: 0;
@@ -14,9 +32,11 @@ p{
 }
 
 div{
+   
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    
 }
 .header{
     background-color: #170b5a89;
@@ -26,6 +46,7 @@ div{
     z-index: 2;
     color: antiquewhite;
 }
+
 .header a{
     text-decoration: none;
     color: rgb(202, 199, 194);
@@ -33,6 +54,8 @@ div{
 .top{
     padding: 5px;
     text-align: center;
+    display: flex;
+    padding-top: 10px;
 }
 a img{
     height: 50px;
@@ -45,7 +68,7 @@ a img{
     display: inline-flex;
     width: 100%;
     height:60px;
-    /* text-align: center; */
+    text-align:left;
 }
 .bottom .left{
     margin-left: 10px;
@@ -79,8 +102,7 @@ hr{
     padding: 7px;
     padding-bottom: 0;
     margin-top: 7px;
-    border-bottom:solid 1px ;
-    border-left:solid 1px ;
+    
     
 }
 .in-bottom-rec:hover ~.hover-recreation{
@@ -105,7 +127,7 @@ hr{
     align-items: center;
     justify-content: center;
     top: 0;
-    margin-top: 0;
+    
 }
 .cover h1{
     font-size: 80px;
@@ -114,9 +136,14 @@ hr{
     padding: 30px;
 
 }
+.in-message{
+    box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.1);
+}
 .message{
-    padding: 100px 300px;
+    padding: 0px 300px;
     text-align: center;
+    margin: 20px;
+   
 }
 .message p{
     padding: 20px 90px 0 90px;
@@ -165,8 +192,9 @@ hr{
     background-color: #7b68ee99;
     /* height: 20px; */
     width: 20px;
-    height: 20px;
+    height: 40px;
     top: 40%;
+    font-size: 30px;
 
 }
 .prev{
@@ -192,6 +220,7 @@ hr{
     padding: 10px;
     display: flex;
     align-items: flex-start;
+    box-shadow: 0px 0px 3px 2px  rgba(0,0,0,0.4);
 }
 .room .left{
     width: 49%;
@@ -225,6 +254,7 @@ hr{
     display: inline-block;
     text-align: center;
     height: inherit;
+    background-color: white;
     
 }
 
@@ -397,4 +427,42 @@ hr{
 }
 button{
     font-size: larger;
+}
+/* recreation */
+.beach{
+    width: 100%;
+    height: 700px;
+    background-image: url(images/beach.webp);
+    background-position: center;
+    /* position: absolute; */
+    background-size: 100%;
+}
+.beach .text{
+    top: 50%;
+    left: 1000px;
+    padding: 50px;
+    width: 30%;
+    height: 200px;
+    position: relative;
+    
+    font-size: larger;
+    color: antiquewhite;
+}
+/* restaurant */
+.food{
+    display: flex;
+    padding: 0px 20px;
+    margin: 0px auto;
+    
+}
+.food .pic{
+    width: 500px;
+    height: 300px;
+    margin: 10px auto;
+    padding: 5px;
+}
+.pic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
