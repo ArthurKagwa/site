@@ -77,13 +77,14 @@ a img{
 }
 .bottom .left{
     margin-left: 10px;
-    width: 29%;
+    width: 20%;
     
 
 }
  .right{
     /* display: inline-flex; */
-    width: 70%;
+    width: 80%;
+    padding-left: 10%;
 
 }
 hr{
@@ -282,7 +283,7 @@ hr{
             font-size: smaller;
         }
         p{
-            font-size: .7rem;
+            font-size: 1rem;
         }
         a img{
             height: 1.5rem;
@@ -628,4 +629,20 @@ button{
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+div.contact{
+    text-align: center;
+    width: 70%;
+    padding: 1rem;
+    margin: auto;
+
+}
+form.contact{
+    padding: 1rem;
+    border: solid 2px;
+    border-radius: 5%;
+}
+form.contact fieldset.set{
+    border: 0;
+    padding: .5rem;
 }
